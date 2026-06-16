@@ -1,4 +1,5 @@
-server:
+
+ server:
   port: 8081
 
 spring:
@@ -6,10 +7,12 @@ spring:
     url: jdbc:mysql://localhost:3306/product_db
     username: root
     password: R@m983364
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
+    show-sql: true
 
 eureka:
   client:
