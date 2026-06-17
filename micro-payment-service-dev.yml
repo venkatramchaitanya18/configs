@@ -9,6 +9,8 @@ spring:
     url: jdbc:mysql://localhost:3306/payment_db
     username: root
     password: R@m983364
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
 
   jpa:
     hibernate:
