@@ -34,3 +34,17 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 10s
         permittedNumberOfCallsInHalfOpenState: 2
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,circuitbreakers,circuitbreakerevents
+
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    io.github.resilience4j.circuitbreaker: DEBUG
