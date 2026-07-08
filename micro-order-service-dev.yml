@@ -45,6 +45,10 @@ management:
     health:
       show-details: always
 
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    
 logging:
   level:
     io.github.resilience4j.circuitbreaker: DEBUG
